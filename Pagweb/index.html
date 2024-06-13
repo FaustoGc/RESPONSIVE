@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TIME - TU TIEMPO ES TODO </title>
+    <!-- Título de la página -->
+    <title>TIME - TU TIEMPO ES TODO</title>
+    
+    <!-- Metadatos -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +14,7 @@
     <meta name="keywords" content="free, luxury watches, one page template">
     <meta name="description" content="Free Luxury Watch One Page Website Template">
     
+    <!-- Enlaces a hojas de estilo y fuentes -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
@@ -20,96 +24,128 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Mirza:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <!-- Definición de íconos SVG -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <!-- Ícono de búsqueda -->
       <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <title>Search</title>
         <path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
       </symbol>
+      <!-- Ícono de usuario -->
       <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 16 16">
         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
       </symbol>
+      <!-- Ícono de navegación -->
       <symbol xmlns="http://www.w3.org/2000/svg" id="nav-icon" viewBox="0 0 16 16">
         <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
       </symbol>
+      <!-- Ícono de cierre -->
       <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 16 16">
         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
       </symbol>
+      <!-- Ícono de menú de navegación -->
       <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
         <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
       </symbol>
+      <!-- Ícono de reproducción -->
       <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
         <path fill="currentColor" d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z" />
         <path fill="currentColor" d="m9 17l8-5l-8-5z" />
       </symbol>
+      <!-- Ícono de estrella llena -->
       <symbol xmlns="http://www.w3.org/2000/svg" id="star-fill" viewBox="0 0 16 16">
         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="star-empty" viewBox="0 0 16 16">
+        <!--Define la regresion -->
         <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
       </symbol>
+    
       <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+         <!-- Define the cart symbol -->
         <path fill="currentColor" d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1V2m6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5H16Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="wishlist" viewBox="0 0 24 24">
+        <!-- Define the wishlist symbol -->
         <path fill="currentColor" d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z"/>
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+        <!-- Define the plus symbol -->
         <path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+        <!-- Define the minus symbol -->
         <path fill="currentColor" d="M19 12.998H5v-2h14z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="mail" viewBox="0 0 24 24">
+         <!-- Define the mail symbol -->
         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
           <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" />
           <path d="m3 7l9 6l9-6" />
         </g>
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24">
+        <!-- Define the facebook symbol -->
         <path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 24 24">
+         <!-- Define the twitter symbol -->
         <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 24 24">
+        <!-- Define the instagram symbol -->
         <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="linkedin" viewBox="0 0 24 24">
+        <!-- Define el contorno y el relleno del icono de LinkedIn -->
         <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z" />
       </symbol>
+      <!-- Define un símbolo SVG para un icono de YouTube -->
       <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 24 24">
+        <!-- Define el contorno y el relleno del icono de YouTube -->
         <path fill="currentColor" d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476h.489ZM9.999 8.5v7l6-3.5l-6-3.5Z" />
       </symbol>
+
+      <!-- Cierre del contenedor SVG -->
     </svg>
+    <!-- Definición del encabezado del sitio web -->
     <header id="header" class="site-header text-black">
+       <!-- Navegación principal del encabezado -->
       <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
+           <!-- Enlace de la marca de la barra de navegación -->
           <a class="navbar-brand" href="index.html">
             TIME - MIDE TU TIEMPO
           </a>
+          <!-- Botón para alternar la navegación en dispositivos pequeños -->
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+             <!-- Icono SVG del botón de la barra de navegación -->
             <svg class="navbar-icon" width="50" height="50">
               <use xlink:href="#navbar-icon"></use>
             </svg>
           </button>
+          <!-- Contenido del menú desplegable de la barra de navegación -->
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
+               <!-- Enlace de la marca del menú desplegable -->
               <a class="navbar-brand" href="index.html">
                 <img src="images/main-logo.png" class="logo">
               </a>
+                 <!-- Botón para cerrar el menú desplegable -->
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
             <div class="offcanvas-body">
+               <!-- Lista de elementos de la barra de navegación -->
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-5 pe-3 botom-borders-out">
+                 <!-- Enlace a la sección "Hogar" -->
                 <li class="nav-item">
                   <a class="nav-link active p-0" href="#intro">HOGAR</a>
                 </li>
-                
-                
-                
+                <!-- Enlace a la sección "Productos" -->
                 <li class="nav-item">
                   <a class="nav-link p-0" href="#featured-products">PRODUCTOS</a>
                 </li>
+              <!-- Enlace a la sección "Preguntas" -->  
                 <li class="nav-item">
                   <a class="nav-link p-0" href="#faqs">PREGUNTAS</a>
                 </li>
@@ -119,38 +155,53 @@
           </div>
         </div>
       </nav>
+      <!-- Cierre del encabezado del sitio web -->
     </header>
+    <!-- Lista de puntos de referencia fijos para la navegación en la página -->
     <ul class="waypoints list-unstyled position-fixed">
+      <!-- Punto de referencia que enlaza con la sección de introducción -->
       <li class="waypoints1">
         <a href="#intro"></a>
       </li>
+      <!-- Punto de referencia que enlaza con la sección 'Sobre Nosotros' -->
+  <li class="waypoints2">
       <li class="waypoints2">
         <a href="#about-us"></a>
       </li>
+       <!-- Punto de referencia que enlaza con la sección del reproductor de video -->
+  <li class="waypoints3">
       <li class="waypoints3">
         <a href="#video-player"></a>
       </li>
+      <!-- Punto de referencia que enlaza con la sección de testimonios -->
       <li class="waypoints4">
         <a href="#testimonials"></a>
       </li>
+       <!-- Punto de referencia que enlaza con la sección de productos destacados -->
       <li class="waypoints4">
         <a href="#featured-products"></a>
       </li>
+      <!-- Punto de referencia que enlaza con la sección de preguntas frecuentes -->
       <li class="waypoints5">
         <a href="#faqs"></a>
       </li>
+       <!-- Punto de referencia que enlaza con la sección de detalles del producto -->
       <li class="waypoints5">
         <a href="#product-detail"></a>
       </li>
+       <!-- Punto de referencia que enlaza con el pie de página -->
       <li class="waypoints5">
         <a href="#footer"></a>
       </li>
     </ul>
+    <!-- Sección de introducción con una imagen de fondo -->
     <section id="intro" style="background-image: url(images/banner-image1.jpg); background-repeat: no-repeat; background-position: center; width: 100%; height: 1021px;">
       <div class="container-lg">
         <div class="row">
           <div class="col-lg-7 col-md-6">
+            <!-- Contenido del banner -->
             <div class="banner-content py-lg-12">
+              <!-- Título principal de la sección de introducción -->
               <h1 class="display-1 pb-4"> Organiza tu <span class="text-primary"> Tiempo </span> para una mejor disciplina. </h1>
               <p>Se acabo el momento de que quedes sin hora en el momento menos preciso</p>
               <a href="shop.html" class="btn btn-lg btn-outline-dark btn-bg-light text-uppercase mt-3 rounded-pill fw-bold"> Hacer pedido ahora!! </a>
@@ -159,12 +210,16 @@
         </div>
       </div>
     </section>
+    <!-- Sección "Sobre Nosotros" con imagen de fondo y contenido explicativo -->
     <section id="about-us" style="background-image: url(images/pattern-bg.png); background-repeat: no-repeat; background-position: center; width: 100%; height: auto;">
       <div class="container-lg">
         <div class="row align-items-center py-lg-9">
           <div class="col-lg-6">
             <div class="display-header">
-              <h2 class="display-4 m-0 pb-4">Unicos productos</h2>
+              <!-- Título de la sección "Sobre Nosotros" -->
+              <h2 class="display-4 m-0 pb-4">Unicos productos</h2>          
+              <!-- Descripción detallada de los productos -->
+
               <p>Adéntrate en el mundo de la elegancia refinada con los relojes de Reddy. Cada pieza es un testimonio de artesanía excepcional y diseño atemporal, fusionados para crear el complemento perfecto para cualquier ocasión. Desde reuniones formales hasta aventuras espontáneas, nuestros relojes están diseñados para destacar en cada momento de tu vida.
 
                 Materiales de excelencia: Nuestros relojes están confeccionados con los más finos materiales, incluyendo cajas de acero inoxidable y cristal de zafiro resistente a los arañazos, asegurando una durabilidad sin igual y una apariencia impecable a lo largo del tiempo. </p>
@@ -173,6 +228,7 @@
           <div class="col-lg-6">
             <div class="detail">
               <ul>
+                <!-- Detalles adicionales sobre los productos -->
                 <li>
                   <strong>LO MEJOR EN MATERIALES:</strong> tiene una precisión impecable Ya sea que prefieras movimientos de cuarzo precisos o la elegancia clásica de los movimientos automáticos, nuestros relojes te ofrecen una precisión incomparable, manteniéndote siempre puntual y elegante.
                   Consta con un estilo definido con un diseño que fusiona la sofisticación con la simplicidad, nuestros relojes emanan un aura de elegancia sin esfuerzo. Desde los detalles más finos hasta la esfera impecablemente diseñada, cada aspecto está cuidadosamente pensado para capturar miradas y despertar admiración.
@@ -183,21 +239,27 @@
         </div>
       </div>
     </section>
+    <!-- Sección del reproductor de video con fondo gris y contenido promocional -->
     <section id="video-player" class="video bg-gray-8 py-lg-8">
       <div class="container-lg">
         <div class="row">
           <div class="col-lg-8 text-center mx-auto">
             <div class="display-header text-light">
+               <!-- Título de la sección del video -->
               <h2 class="display-2 text-light mt-0">Video Promo</h2>
+               <!-- Descripción del contenido del video -->
               <p> Aqui podras ver lo mejor en lo que es un video explicando sobre la calidad de nuestros productos
                 Y en donde tenemos las mejores promociones para este mes </p>
             </div>
           </div>
+           <!-- Contenido del video con imagen de fondo -->
           <div class="video-content position-relative mt-5">
             <div class="video-bg">
               <img src="images/video-item.jpg" alt="video" class="img-fluid">
             </div>
+            <!-- Contenedor del reproductor de video -->
             <div class="video-player">
+              <!-- Enlace a YouTube con botón de reproducción -->
               <a class='youtube play-btn position-absolute d-flex justify-content-center align-items-center' href="https://www.youtube.com/embed/2-iXtcRv5Ts">
                 <svg class="play text-light" width="120" height="120">
                   <use xlink:href="#play"></use>
@@ -208,19 +270,25 @@
         </div>
       </div>
     </section>
+    <!-- Sección de testimonios de clientes -->
     <section id="testimonials" class="py-lg-7">
       <div class="container-lg">
+        <!-- Encabezado de la sección de testimonios -->
         <div class="section-header mt-0 text-center">
           <h2 class="display-2">COMENTARIOS DE CLIENTES</h2>
         </div>
+          <!-- Contenedor para los testimonios, utilizando Swiper.js para el carrusel -->
         <div class="d-flex flex-wrap">
           <div class="swiper review-swiper position-relative mb-5">
             <div class="swiper-wrapper">
+                        <!-- Testimonio individual -->
               <div class="swiper-slide border p-5">
                 <div class="review-item">
                   <blockquote class="fs-5">"Este reloj es una verdadera joya en mi colección. Su diseño sofisticado y su artesanía impecable lo convierten en el complemento perfecto para cualquier ocasión. Cada vez que lo llevo puesto, recibo elogios por su elegancia y estilo atemporal. Sin duda, una adición invaluable a mi guardarropa." </blockquote>
+                        <!-- Detalles del autor del testimonio -->
                   <div class="author-detail d-flex justify-content-between align-items-center">
                     <div class="name fw-bold">GUSTAVO BENAVITEZ - Feb 22, 2023</div>
+                    <!-- Calificación con estrellas -->
                     <div class="rating d-flex">
                       <svg class="star-fill svg-yellow" width="15" height="15">
                         <use xlink:href="#star-fill"></use>
@@ -241,6 +309,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Testimonio de Fausto Garrido -->
               <div class="swiper-slide border p-5">
                 <div class="review-item">
                   <blockquote class="fs-5">"¡Impresionante! Este reloj combina una estética elegante con una precisión excepcional. Su diseño refinado y su atención al detalle lo convierten en una obra maestra en mi colección." </blockquote>
@@ -266,6 +335,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Testimonio de Adrian Batalla -->
               <div class="swiper-slide border p-5">
                 <div class="review-item">
                   <blockquote class="fs-5">"No puedo dejar de admirar la calidad artesanal de este reloj. Cada componente parece haber sido cuidadosamente diseñado para ofrecer una experiencia de uso excepcional. Definitivamente, un reloj para toda la vida." </blockquote>
@@ -291,6 +361,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Testimonio de Choez Jose -->
               <div class="swiper-slide border p-5">
                 <div class="review-item">
                   <blockquote class="fs-5">"Increíblemente elegante y funcional. Este reloj no solo complementa mi estilo, sino que también me mantiene puntual con su precisión impecable. Una inversión que vale cada centavo." </blockquote>
@@ -325,6 +396,7 @@
     <section id="featured-products" class="bg-gray-1 py-lg-6">
       <div class="container-lg">
         <div class="display-header text-center">
+          <!-- Comentario para el título -->
           <h2 class="display-2">LOS MEJORES PRECIOS</h2>
         </div>
         <div class="product-content">
@@ -354,6 +426,7 @@
                   <h3 class="card-title fs-3 mb-2 mt-2">
                     <a href="single-product.html">TIEMPO EXCELSO</a>
                   </h3>
+                   <!-- Comentario para la descripción -->
                   <p>Cada reloj Tempus está meticulosamente elaborado con precisión y atención al detalle, reflejando la maestría de expertos relojeros.</p>
                 </div>
               </div>
@@ -383,6 +456,7 @@
                   <h3 class="card-title fs-3 mb-2 mt-2">
                     <a href="single-product.html">DETALLE EXQUISITO</a>
                   </h3>
+                   <!-- Comentario para la descripción -->
                   <p>Cada faceta del reloj Tempus exhibe una atención meticulosa al detalle, desde el distintivo grabado del logotipo hasta las proporciones perfectamente equilibradas.</p>
                 </div>
               </div>
@@ -409,9 +483,11 @@
                   </div>
                 </div>
                 <div class="card-detail">
+                   <!-- Comentario para el título del producto -->
                   <h3 class="card-title fs-3 mb-2 mt-2">
                     <a href="single-product.html">DISEÑO ELEGANTE Y PERENNE</a>
                   </h3>
+                    <!-- Comentario para la descripción -->
                   <p>El reloj Tempus presenta un diseño elegante y atemporal, con líneas refinadas, esferas minimalistas y una estética sofisticada.</p>
                 </div>
               </div>
@@ -438,9 +514,11 @@
                   </div>
                 </div>
                 <div class="card-detail">
+                    <!-- Comentario para el título del producto -->
                   <h3 class="card-title fs-3 mb-2 mt-2">
                     <a href="single-product.html">AJUSTE ERGONÓMICO</a>
                   </h3>
+                  <!-- Comentario para la descripción del producto -->
                   <p>Diseñado pensando en la comodidad del usuario, el reloj Tempus ofrece un ajuste ergonómico en la muñeca, ideal para uso prolongado.</p>
                 </div>
               </div>
@@ -467,9 +545,11 @@
                   </div>
                 </div>
                 <div class="card-detail">
+                   <!-- Comentario para el título del producto -->
                   <h3 class="card-title fs-3 mb-2 mt-2">
                     <a href="single-product.html">RESISTENTE AL AGUA</a>
                   </h3>
+                   <!-- Comentario para la descripción del producto -->
                   <p>El reloj Tempus es resistente al agua, proporcionando protección contra salpicaduras y permitiéndote usarlo con confianza en diversas situaciones.
 
                   </p>
@@ -512,29 +592,38 @@
     <section id="faqs" class="py-lg-10">
       <div class="container-lg">
         <div class="row align-items-center">
+           <!-- Título de la sección de preguntas -->
             <h2 class="display-4 fw-600 mt-0 text-center">SECCION DE PREGUNTAS</h2>
             <div class="col-lg-8 mx-auto">
               <div class="accordion" id="accordionExample">
+                <!-- Primer pregunta del acordeón -->
                 <div class="accordion-item border-0 border-bottom">
                   <h2 class="accordion-header m-0" id="headingOne">
+                     <!-- Botón de la pregunta -->
                     <button class="accordion-button fs-3 fw-medium bg-transparent px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">SON BUENOS?</button>
                   </h2>
+                    <!-- Contenido de la respuesta colapsable -->
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">Claro que son buenos, son los mejores del mercado hasta el momento, el mas resistente</div>
                   </div>
                 </div>
+                 <!-- Segunda pregunta del acordeón -->
                 <div class="accordion-item border-0 border-bottom">
                   <h2 class="accordion-heade m-0" id="headingTwo">
+                      <!-- Botón de la pregunta -->
                     <button class="accordion-button fs-3 fw-medium bg-transparent px-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">CUANTO TIEMPO DE GARANTIA TIENEN</button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">Tanto como tienen la mejor calidad y precio, constamos con la garantia de 6 meses despues de su compra mas 1 año de regalo, que por lo tanto serian mas o menos 1 año y medio.. </div>
                   </div>
                 </div>
+                 <!-- Tercera pregunta del acordeón -->
                 <div class="accordion-item border-0 border-bottom">
                   <h2 class="accordion-header m-0" id="headingThree">
+                      <!-- Botón de la pregunta -->
                     <button class="accordion-button fs-3 fw-medium bg-transparent px-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">SONRESISTENTES AL AGUA Y AL SOL</button>
                   </h2>
+                  <!-- Contenido de la respuesta colapsable -->
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">Claro que sí, son los mejores en resistencia, que su modelo puede resistir hasta 50 metros sobre el agua sin recibir ningun daño, es diseñado tambien para las personas que les gustan trabajar con el reloj y que no le pase nada .</div>
                   </div>
@@ -547,33 +636,41 @@
     <section id="product-detail" class="single-product bg-gray-8 py-lg-8">
       <div class="container-lg">
         <div class="row justify-content-between">
+         <!-- Columna izquierda con la imagen del producto -->
           <div class="col-md-5">
             <div class="image-holder">
               <img src="images/product-large-1.jpg" alt="product-large" class="img-fluid">
             </div>
           </div>
+          <!-- Columna derecha con la información detallada del producto -->
           <div class="col-md-6">
             <div class="product-info">
+                <!-- Encabezado del producto -->
               <div class="display-header text-light">
                 <h2 itemprop="name" class="product-title text-light">PIDELO AHORAA!</h2>
                 <p>No te pierdaas este gran modelo exclusivo tanto de elegancia como de resistencia unico en el mundo, si hace su pedido hoy y disfrute del envio gratiuto para todo el ecuador y el mundo.</p>
               </div>
+              <!-- Detalles del producto: modelo, precio, opciones de color -->
               <div class="product-action mt-4">
                 <div class="detail-list mt-3">
                   <ul class="text-light list-unstyled">
+                     <!-- Detalle del precio del reloj -->
                     <li class="pb-3">
                       <strong>MODELO DEL RELOJ:</strong>
                       <a href="#" class="text-light">RELOJ CONTROL</a>
                     </li>
+                    <!-- Detalle del precio del reloj -->
                     <li class="pb-3">
                       <strong>PRECIO:</strong>
                       <a href="#" class="text-light">$1999.000</a>
                     </li>
+                     <!-- Opciones de color del producto -->
                     <li class="color-product-options pb-3">
                       <div class="color-toggle d-flex" data-option-index="0">
                         <div class="item-title">
                           <strong>ELIJE EL COLOR QUE NECESITAS:</strong>
                         </div>
+                         <!-- Ejemplos de colores disponibles -->
                         <div class="color-item ms-2" data-val="Cement" title="Cement">
                           <span class="color-inner d-block rounded-pill" style="background-color: #ABA194"></span>
                         </div>
@@ -587,6 +684,7 @@
                     </li>
                   </ul>
                 </div>
+                 <!-- Cantidad y botón de ordenar -->
                 <div class="product-quantity">
                   <div class="input-group product-qty me-3 border rounded-2" style="max-width: 130px;">
                     <span class="input-group-btn bg-gray-2">
@@ -596,6 +694,7 @@
                         </svg>
                       </button>
                     </span>
+                      <!-- Input para la cantidad del producto -->
                     <input type="text" id="quantity" name="quantity" class="form-control input-number text-center bg-gray-1" value="1" min="1" max="100">
                     <span class="input-group-btn bg-gray-2">
                       <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
@@ -605,6 +704,7 @@
                       </button>
                     </span>
                   </div>
+                   <!-- Botón para añadir al carrito -->
                   <button type="submit" name="add" id="add-to-cart" class="btn btn-lg btn-outline-dark btn-bg-light text-uppercase mt-5 rounded-pill fw-bold">Order Now </button>
                 </div>
               </div>
@@ -616,10 +716,12 @@
     <footer id="footer" class="py-lg-10">
       <div class="container-lg">
         <div class="row">
+           <!-- Columna izquierda con formulario de contacto -->
           <div class="col-lg-6 me-5">
             <div class="display-header">
               <h2 class="display-2">CONTACTANOS</h2>
             </div>
+              <!-- Formulario de contacto -->
             <form class="needs-validation" novalidate="">
               <div class="row">
                 <div class="col-sm-12 mb-3">
@@ -641,6 +743,7 @@
               <button class="btn btn-primary btn-lg mt-5 rounded-pill text-uppercase" type="submit">ORDENA YAAA!!</button>
             </form>
           </div>
+           <!-- Columna derecha con información de contacto -->
           <div class="col-lg-5">
             <div class="row">
               <div class="display-header">
@@ -651,13 +754,19 @@
                   <use xlink:href="#mail"></use>
                 </svg>
                 <a href="mailto:fgarridocusme10@gmail.com">fgarridocusme10@gmail.com</a>
+               <!-- Aquí se podría añadir más información de contacto si fuera necesario -->
               </div>
             </div>
             <div class="row">
               <div class="display-header">
+
+                 <!-- Encabezado para seguirnos en redes sociales -->
+
                 <h2 class="display-2">SIGUENOS EN NUESTRAS REDES SOCIALES</h2>
+                <!-- Contenedor de enlaces a redes sociales -->
                 <div class="social-links">
                   <ul class="list-unstyled d-flex flex-wrap gap-3">
+                     <!-- Enlace a Facebook -->
                     <li>
                       <a href="#">
                         <svg width="25" height="25" viewBox="0 0 24 24" class="svg-gray-3">
@@ -666,6 +775,7 @@
                       </a>
                     </li>
                     <li>
+                      <!-- Enlace a Twitter -->
                       <a href="#">
                         <svg width="25" height="25" viewBox="0 0 24 24" class="svg-gray-3">
                           <use xlink:href="#twitter"></use>
@@ -673,6 +783,7 @@
                       </a>
                     </li>
                     <li>
+                       <!-- Enlace a YouTube -->
                       <a href="#">
                         <svg width="25" height="25" viewBox="0 0 24 24" class="svg-gray-3">
                           <use xlink:href="#youtube"></use>
@@ -680,6 +791,7 @@
                       </a>
                     </li>
                     <li>
+                    <!-- Enlace a LinkedIn -->
                       <a href="#">
                         <svg width="25" height="25" viewBox="0 0 24 24" class="svg-gray-3">
                           <use xlink:href="#linkedin"></use>
@@ -687,6 +799,7 @@
                       </a>
                     </li>
                     <li>
+                      <!-- Enlace a Instagram -->
                       <a href="#">
                         <svg width="25" height="25" viewBox="0 0 24 24" class="svg-gray-3">
                           <use xlink:href="#instagram"></use>
@@ -700,16 +813,26 @@
           </div>
         </div>
       </div>
+      <!-- Fin del pie de página -->
+<!-- Barra inferior del pie de página -->
     </footer>
     <div class="footer-bottom text-center bg-gray-1 py-5">
+      <!-- Derechos de autor y enlace para conocer más -->
       <p>© 2020 TIME. DISEÑADO POR FAUSTO  JOSUE GARRIDO CUSME <a href="https://www.esquire.com/">CONOCE MAS</a>
       </p>
     </div>
+    <!-- Fin de la barra inferior del pie de página -->
+     <!-- Scripts al final de la página -->
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<!-- Inclusión de Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- Inclusión de Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Inclusión de otros plugins -->
     <script src="js/plugins.js"></script>
+    <!-- Script principal de la página -->
     <script src="js/script.js"></script>
+    <!-- Fin de los scripts -->
   </body>
 </html>
