@@ -22,6 +22,7 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
+/* Definicion de vatriables para estilos personalizados*/
 body {
   --heading-font: "Mirza", Georgia, serif;
   --heading-font-weight: 400;
@@ -30,6 +31,7 @@ body {
   --swiper-theme-color: #A58C81;
   --swiper-pagination-color: #A58C81;
 
+ /* Variables de Bootstrap personalizadas */
   /* bootstrap */
   --bs-body-font-family: "Lora", Roboto, sans-serif;
   --bs-body-font-size: 16px;
@@ -39,7 +41,7 @@ body {
   --bs-body-color-rgb: 1.6, 1.6, 1.6;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-body-bg: #93ff4b;
-
+ /* Colores principales de Bootstrap personalizados */
   --bs-primary: #876B5E;
   --bs-secondary: #93ff4b;
   --bs-black: #111;
@@ -51,26 +53,26 @@ body {
   --bs-gray-200: #93ff4b;
   --bs-gray-300: #93ff4b;
   --bs-gray-800: #3D3A38;
-
+/* Colores principales de Bootstrap en formato RGB */
   --bs-primary-rgb: 135, 107, 94;
   --bs-secondary-rgb: 239, 238, 235;
   --bs-black-rgb: 17, 17, 17;
   --bs-light-rgb: 241, 241, 240;
   --bs-dark-rgb: 33, 37, 41;
-
+ /* Estilos para enlaces */
   --bs-link-color: #111;
   --bs-link-color-rgb: 17, 17, 17;
   --bs-link-decoration: underline;
   --bs-link-hover-color: #111;
   --bs-link-hover-color-rgb: 17, 17, 17;
-
+ /* Icono activo para el botón del acordeón */
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csymbol xmlns='http://www.w3.org/2000/svg' id='plus' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z'/%3E%3C/symbol%3E");
 }
-
+/* Ajuste del espaciado entre letras para el cuerpo del texto */
 body {
   letter-spacing: 0.03rem;
 }
-
+/* Estilos para los encabezados */
 h1,
 .h1,
 h2,
@@ -83,12 +85,13 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: var(--heading-font);
-  font-weight: var(--heading-font-weight);
-  color: var(--heading-color);
-  line-height: var(--heading-line-height);
-}
+  font-family: var(--heading-font); /* Fuente definida en las variables */
+  font-weight: var(--heading-font-weight); /* Peso de la fuente definido en las variables */
+  color: var(--heading-color); /* Color del texto definido en las variables */
+  line-height: var(--heading-line-height); /* Altura de línea definida en las variables */
 
+}
+/* Estilos para encabezados ligeros */
 h1.light,
 .h1,
 h2.light,
@@ -101,162 +104,167 @@ h5.light,
 .h5,
 h6.light,
 .h6 {
+/* Estilo de color para elementos con la clase .light */
   color: var(--bs-light);
 }
 
 h1,
 h2,
 h3 {
-  margin: 25px 0;
+  margin: 25px 0; /* Margen superior e inferior para los encabezados h1, h2 y h3 */
 }
 
 h5,
 h6 {
-  letter-spacing: 1px;
+  letter-spacing: 1px; /* Espaciado entre letras para encabezados h5 y h6 */
 }
-
+/* Tamaños de fuente para diferentes niveles de encabezados */
 h1,
 .h1 {
-  font-size: 4.5rem;
+  font-size: 4.5rem;  /* Tamaño de fuente para h1 */
 }
 
 h2,
 .h2 {
-  font-size: 3.6rem;
+  font-size: 3.6rem;  /* Tamaño de fuente para h2 */
 }
 
 h3,
 .h3 {
-  font-size: 2.8rem;
+  font-size: 2.8rem;  /* Tamaño de fuente para h3 */
 }
 
 h4,
 .h4 {
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* Tamaño de fuente para h4 */
 }
 
 h5,
 .h5 {
-  font-size: 1.4rem;
+  font-size: 1.4rem; /* Tamaño de fuente para h5 */
 }
 
 h6,
 .h6 {
-  font-size: 1rem;
+  font-size: 1rem; /* Tamaño de fuente para h6 */
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Tamaño de fuente para párrafos */
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* Elimina la subrayado en los enlaces */
 }
-
+/* Ajuste del ancho máximo para contenedores fluidos */
 /* container fluid */
 .container-fluid {
-  max-width: 1800px;
+  max-width: 1800px; /* Ancho máximo para contenedor fluido */
 }
-
+/* Ajuste del ancho máximo para diferentes tamaños de contenedor en pantallas grandes */
 @media (min-width: 1600px) {
 .container, .container-lg {
-    max-width: 1350px;
+    max-width: 1350px; /* Ancho máximo para contenedor y contenedor grande */
   }
 .container, .container-md {
-    max-width: 1200px;
+    max-width: 1200px; /* Ancho máximo para contenedor y contenedor mediano */
   }
 }
 
-/* list group */
+/* Estilos para elementos de lista de grupo */
 .list-group-item {
-  --bs-list-group-item-padding-x: 0;
-  --bs-list-group-border-width: 0;
+  --bs-list-group-item-padding-x: 0; /* Espaciado horizontal para elementos de lista de grupo */
+  --bs-list-group-border-width: 0; /* Ancho del borde para elementos de lista de grupo */
 }
 
-/* btn */
+/* Estilos para botones */
 .btn {
-  --bs-btn-border-radius: 0;
+  --bs-btn-border-radius: 0; /* Radio del borde para botones */
 }
 
+/* Estilos para botones primarios */
 .btn-primary {
-  --bs-btn-color: var(--bs-light);
-  --bs-btn-bg: var(--bs-primary);
-  --bs-btn-border-color: var(--bs-primary);
-  --bs-btn-hover-color: var(--bs-light);
-  --bs-btn-hover-bg: var(--bs-dark);
-  --bs-btn-hover-border-color: var(--bs-dark);
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: var(--bs-light);
-  --bs-btn-active-bg: var(--bs-dark);
-  --bs-btn-active-border-color: var(--bs-dark);
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: var(--bs-light);
-  --bs-btn-disabled-bg: var(--bs-primary);
-  --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-btn-color: var(--bs-light); /* Color del texto del botón primario */
+  --bs-btn-bg: var(--bs-primary); /* Color de fondo del botón primario */
+  --bs-btn-border-color: var(--bs-primary); /* Color del borde del botón primario */
+  --bs-btn-hover-color: var(--bs-light); /* Color del texto al pasar el mouse sobre el botón primario */
+  --bs-btn-hover-bg: var(--bs-dark); /* Color de fondo al pasar el mouse sobre el botón primario */
+  --bs-btn-hover-border-color: var(--bs-dark); /* Color del borde al pasar el mouse sobre el botón primario */
+  --bs-btn-focus-shadow-rgb: 49, 132, 253; /* Sombra al enfocar el botón primario */
+  --bs-btn-active-color: var(--bs-light); /* Color del texto del botón primario activo */
+  --bs-btn-active-bg: var(--bs-dark); /* Color de fondo del botón primario activo */
+  --bs-btn-active-border-color: var(--bs-dark); /* Color del borde del botón primario activo */
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Sombra interna del botón primario activo */
+  --bs-btn-disabled-color: var(--bs-light); /* Color del texto del botón primario deshabilitado */
+  --bs-btn-disabled-bg: var(--bs-primary); /* Color de fondo del botón primario deshabilitado */
+  --bs-btn-disabled-border-color: var(--bs-primary); /* Color del borde del botón primario deshabilitado */
 }
 
+/* Estilos para botones con borde oscuro y fondo claro */
 .btn-outline-dark.btn-bg-light {
-  --bs-btn-bg: var(--bs-light);
+  --bs-btn-bg: var(--bs-light); /* Color de fondo del botón */
 }
 
+/* Estilos para botones grandes y grupos de botones grandes */
 .btn-group-lg>.btn, .btn-lg {
-  --bs-btn-padding-y: 1rem;
-  --bs-btn-padding-x: 2.8rem;
-  --bs-btn-font-size: 1.25rem;
+  --bs-btn-padding-y: 1rem; /* Relleno vertical para botones grandes */
+  --bs-btn-padding-x: 2.8rem; /* Relleno horizontal para botones grandes */
+  --bs-btn-font-size: 1.25rem; /* Tamaño de fuente para botones grandes */
 }
 
+/* Estilo para botones con sombra */
 .btn.btn-shadow {
-  box-shadow: 0px 6px 39px 0px rgba(91, 45, 42, 0.20);
+  box-shadow: 0px 6px 39px 0px rgba(91, 45, 42, 0.20); /* Sombra para el botón */
 }
 
-/* text white */
+/* Estilos para texto blanco */
 .text-white {
-  --heading-color: var(--bs-light);
-  --bs-breadcrumb-item-active-color: var(--bs-light);
-  --bs-breadcrumb-divider-color: var(--bs-light);
-  --bs-link-color-rgb: var(--bs-light-rgb);
-  --bs-link-hover-color-rgb: var(--bs-light-rgb);
+  --heading-color: var(--bs-light); /* Color del encabezado */
+  --bs-breadcrumb-item-active-color: var(--bs-light); /* Color del ítem activo en breadcrumb */
+  --bs-breadcrumb-divider-color: var(--bs-light); /* Color del divisor en breadcrumb */
+  --bs-link-color-rgb: var(--bs-light-rgb); /* Color RGB para enlaces */
+  --bs-link-hover-color-rgb: var(--bs-light-rgb); /* Color RGB para enlaces al pasar el mouse */
 }
 
+/* Estilos para enlaces de navegación dentro de .text-white */
 .text-white .nav-link {
-  --bs-nav-link-color: var(--bs-light);
-  --bs-nav-link-hover-color: var(--bs-light);
-  --bs-nav-link-active-color: var(--bs-light);
-  --bs-navbar-active-color: var(--bs-light);
+  --bs-nav-link-color: var(--bs-light); /* Color del enlace de navegación */
+  --bs-nav-link-hover-color: var(--bs-light); /* Color del enlace de navegación al pasar el mouse */
+  --bs-nav-link-active-color: var(--bs-light); /* Color del enlace de navegación activo */
+  --bs-navbar-active-color: var(--bs-light); /* Color de la barra de navegación activa */
 }
 
-
-/* preloader */
+/* Estilos para el preloader */
 .preloader {
-  position: fixed;
-  z-index: 99;
-  background: var(--bs-dark);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: height 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: fixed; /* Posición fija */
+  z-index: 99; /* Índice z para superponer */
+  background: var(--bs-dark); /* Color de fondo */
+  width: 100vw; /* Ancho completo de la ventana */
+  height: 100vh; /* Alto completo de la ventana */
+  display: flex; /* Flexbox para centrar contenido */
+  align-items: center; /* Alineación vertical */
+  justify-content: center; /* Justificación horizontal */
+  transition: height 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); /* Transición para cambio de altura */
 }
 
 .preloader.loaded {
-  height: 0;
+  height: 0; /* Altura cero cuando se carga */
 }
 
-/* navbar */
+/* Estilos para la barra de navegación */
 .navbar-brand {
-  font-size: 30px;
-  letter-spacing: -0.07em;
-  font-weight: 900;
+  font-size: 30px; /* Tamaño de fuente para la marca de la barra de navegación */
+  letter-spacing: -0.07em; /* Espaciado entre letras */
+  font-weight: 900; /* Grosor de la fuente */
 }
 .navbar.fixed-top {
-  transition: background-color 0.6s ease-out;
+  transition: background-color 0.6s ease-out; /* Transición para cambio de color de fondo */
 }
 
-/* margin */
+/* Estilos de margen */
 .my-lg-6 {
-  margin-top: 4.5rem!important;
-  margin-bottom: 4.5rem!important;
+  margin-top: 4.5rem!important; /* Margen superior */
+  margin-bottom: 4.5rem!important; /* Margen inferior */
 }
 .my-lg-7 {
   margin-top: 6.5rem!important;
@@ -275,10 +283,10 @@ a {
   margin-bottom: 12.5rem!important;
 }
 
-/* padding */
+/* Estilos de padding */
 .py-lg-6 {
-  padding-top: 4.5rem!important;
-  padding-bottom: 4.5rem!important;
+  padding-top: 4.5rem!important; /* Padding superior */
+  padding-bottom: 4.5rem!important; /* Padding inferior */
 }
 .py-lg-7 {
   padding-top: 6.5rem!important;
@@ -307,190 +315,205 @@ a {
 
 /* - Background Color
 ------------------------------------------------------------- */ 
+/* - Background Color
+------------------------------------------------------------- */ 
 .bg-gray-1 {
-  background-color: var(--bs-gray-100);
+  background-color: var(--bs-gray-100); /* Color de fondo gris claro */
 }
 .bg-gray-2 {
-  background-color: var(--bs-gray-200);
+  background-color: var(--bs-gray-200); /* Color de fondo gris medio */
 }
 .bg-gray-3 {
-  background-color: var(--bs-gray-300);
+  background-color: var(--bs-gray-300); /* Color de fondo gris */
 }
 .bg-gray-8 {
-  background-color: var(--bs-gray-800);
+  background-color: var(--bs-gray-800); /* Color de fondo gris oscuro */
 }
 
 /* Bottom borders go out */
-.offcanvas-body .nav-item a{
-    position: relative;
+.offcanvas-body .nav-item a {
+  position: relative; /* Posicionamiento relativo para enlaces en offcanvas-body */
 }
 .botom-borders-out a:after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 1px;
-    background: var(--bs-dark);
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+  position: absolute; /* Posicionamiento absoluto para el pseudo-elemento */
+  left: 0px; /* Alineación a la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 1px; /* Altura de la línea */
+  background: var(--bs-dark); /* Color de fondo oscuro */
+  content: ""; /* Contenido vacío para el pseudo-elemento */
+  opacity: 0; /* Opacidad inicial */
+  transition: all 0.3s; /* Transición suave */
 }
 .botom-borders-out a:after {
-    bottom: 0;
-    transform: translateY(-10px);
+  bottom: 0; /* Posicionamiento en la parte inferior */
+  transform: translateY(-10px); /* Transformación inicial para la animación */
 }
-.botom-borders-out a:hover:after{
-    opacity: 1;
-    transform: translateY(0px);
+.botom-borders-out a:hover:after {
+  opacity: 1; /* Opacidad completa al pasar el mouse */
+  transform: translateY(0px); /* Restablecer transformación al pasar el mouse */
 }
 
 /* - Display Header
 ------------------------------------------------------------- */ 
 @media (min-width: 1200px) {
  .display-1 {
-    font-size: 6.4rem;
-    line-height: 0.9;
+    font-size: 6.4rem; /* Tamaño de fuente grande para encabezado */
+    line-height: 0.9; /* Altura de línea compacta */
  }
 }
 
 /* - Svg Color
 ------------------------------------------------------------- */ 
 .svg-primary {
-  fill: var(--bs-primary);
-  color: var(--bs-primary);
+  fill: var(--bs-primary); /* Relleno color primario */
+  color: var(--bs-primary); /* Color de SVG primario */
 }
 .svg-yellow {
-  fill: var(--bs-yellow);
-  color: var(--bs-yellow);
+  fill: var(--bs-yellow); /* Relleno color amarillo */
+  color: var(--bs-yellow); /* Color de SVG amarillo */
 }
 .svg-gray {
-  fill: var(--bs-gray);
-  color: var(--bs-gray);
+  fill: var(--bs-gray); /* Relleno color gris */
+  color: var(--bs-gray); /* Color de SVG gris */
 }
 .svg-gray-3 {
-  fill: var(--bs-gray-300);
-  color: var(--bs-gray-300);
+  fill: var(--bs-gray-300); /* Relleno color gris claro */
+  color: var(--bs-gray-300); /* Color de SVG gris claro */
 }
 .svg-gray-3:hover {
-  fill: var(--bs-primary);
-  color: var(--bs-primary);
+  fill: var(--bs-primary); /* Relleno color primario al pasar el mouse */
+  color: var(--bs-primary); /* Color de SVG primario al pasar el mouse */
 }
 
 /* - Banner
 ------------------------------------------------------------- */ 
 #intro .banner-content p {
-  font-size: 1.4rem;
-  width: 88%;
+  font-size: 1.4rem; /* Tamaño de fuente para el contenido del banner */
+  width: 88%; /* Ancho del contenido del banner */
 }
 
 /* - Video
 ------------------------------------------------------------- */ 
 #video-player .play-btn {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0; /* Alineación superior */
+  bottom: 0; /* Alineación inferior */
+  left: 0; /* Alineación izquierda */
+  right: 0; /* Alineación derecha */
+  /* Centrado completo del botón de reproducción */
 }
 
 /* - Testimonial
 ------------------------------------------------------------- */ 
 #testimonials .swiper.review-swiper {
-  overflow-y: inherit;
+  overflow-y: inherit; /* Control de desbordamiento en el eje Y para testimonios */
 }
 #testimonials .review-swiper .swiper-pagination {
-  bottom: -50px;
+  bottom: -50px; /* Ajusta la posición de la paginación del swiper */
 }
+
 .review-swiper .swiper-pagination span.swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  transition: 0.2s ease-in-out;
+  width: 15px; /* Ancho del bullet de paginación */
+  height: 15px; /* Altura del bullet de paginación */
+  transition: 0.2s ease-in-out; /* Transición suave para el bullet */
 }
+
 .review-swiper .swiper-pagination span.swiper-pagination-bullet-active {
-  outline: 2px solid var(--bs-primary);
-  border: 3px solid var(--bs-white);
-  background-color: var(--bs-primary);
+  outline: 2px solid var(--bs-primary); /* Contorno del bullet activo */
+  border: 3px solid var(--bs-white); /* Borde del bullet activo */
+  background-color: var(--bs-primary); /* Color de fondo del bullet activo */
 }
 
 /* - Featured Product
 ------------------------------------------------------------- */ 
 .product-card .cart-button {
-  top: 0;
+  top: 0; /* Alineación superior del botón del carrito en la tarjeta del producto */
 }
+
 .product-card .cart-button button {
-  width: 60px;
-  padding: 5px;
-  transform: rotatey(-90deg) perspective(100px);
-  transform-origin: left;
-  cursor: pointer;
-  transition: .5s ease-in-out;
-  background-color: var(--light-color);
+  width: 60px; /* Ancho del botón del carrito */
+  padding: 5px; /* Relleno del botón del carrito */
+  transform: rotateY(-90deg) perspective(100px); /* Rotación inicial del botón */
+  transform-origin: left; /* Origen de la transformación a la izquierda */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+  transition: 0.5s ease-in-out; /* Transición suave para la rotación */
+  background-color: var(--light-color); /* Color de fondo del botón del carrito */
 }
+
 .product-card .cart-button button:first-of-type {
-  transition-delay: .2s;
+  transition-delay: 0.2s; /* Retraso de la transición para el primer botón */
 }
+
 .product-card .cart-button button:nth-of-type(2) {
-  transition-delay: 0.5s;
+  transition-delay: 0.5s; /* Retraso de la transición para el segundo botón */
 }
+
 .product-card:hover .cart-button button {
-  transform: rotatey(0deg);
+  transform: rotateY(0deg); /* Restablecer la rotación al pasar el mouse */
 }
 
 /* - FAQs
 ------------------------------------------------------------- */
 #faqs .accordion .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='minus' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
-  transform: rotate(0deg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='minus' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E"); /* Imagen de fondo para el estado expandido */
+  transform: rotate(0deg); /* Rotación del icono */
 }
+
 #faqs .accordion .accordion-button::after {
-  content: "";
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 2rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  content: ""; /* Contenido vacío para el pseudo-elemento */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E"); /* Imagen de fondo para el estado colapsado */
+  background-repeat: no-repeat; /* Sin repetición de fondo */
+  background-size: 2rem; /* Tamaño del icono */
+  width: 1.5rem; /* Ancho del icono */
+  height: 1.5rem; /* Altura del icono */
 }
-#faqs  .accordion-button:focus {
-  border-color: var(--bs-light);
-  box-shadow: var(--bs-light);
+
+#faqs .accordion-button:focus {
+  border-color: var(--bs-light); /* Color del borde al enfocar */
+  box-shadow: var(--bs-light); /* Sombra al enfocar */
 }
+
 #faqs .accordion-button:not(.collapsed) {
-  color: var(--bs-dark);
+  color: var(--bs-dark); /* Color del texto cuando no está colapsado */
 }
 
 /* - Single Product
 ------------------------------------------------------------- */
 .product-info .color-product-options .color-item {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
+  display: inline-block; /* Mostrar como bloque en línea */
+  width: 25px; /* Ancho del elemento de color */
+  height: 25px; /* Altura del elemento de color */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el elemento */
 }
+
 .product-info .color-product-options .color-item span {
-  border: 1px solid var(--bs-light);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s ease-in-out;
+  border: 1px solid var(--bs-light); /* Borde del elemento de color */
+  width: 100%; /* Ancho completo del elemento */
+  height: 100%; /* Altura completa del elemento */
+  transition: 0.3s ease-in-out; /* Transición suave para el elemento */
 }
 
 /* - WayPoint
 ------------------------------------------------------------- */ 
 ul.waypoints {
-  top: 400px;
-  right: 20px;
-  z-index: 9;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  top: 400px; /* Posicionamiento desde la parte superior */
+  right: 20px; /* Posicionamiento desde la derecha */
+  z-index: 9; /* Nivel de apilamiento */
+  display: flex; /* Mostrar como flexbox */
+  flex-direction: column; /* Dirección de los elementos en columna */
+  gap: 10px; /* Espaciado entre los elementos */
 }
+
 ul.waypoints li a {
-  display: block;
-  width: 12px;
-  height: 12px;
-  margin: 5px;
-  background: var(--bs-primary);
-  border-radius: 50%;
+  display: block; /* Mostrar como bloque */
+  width: 12px; /* Ancho del enlace */
+  height: 12px; /* Altura del enlace */
+  margin: 5px; /* Margen alrededor del enlace */
+  background: var(--bs-primary); /* Color de fondo del enlace */
+  border-radius: 50%; /* Forma redondeada */
 }
+
 ul.waypoints li a:hover,
 ul.waypoints li a.active {
-  background: var(--bs-light);
-  outline: 2px solid #876b5e;
+  background: var(--bs-light); /* Color de fondo al pasar el mouse o cuando está activo */
+  outline: 2px solid #876b5e; /* Contorno del enlace */
 }
